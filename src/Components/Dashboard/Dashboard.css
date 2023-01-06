@@ -1,0 +1,47 @@
+.dashboardContainer {
+  margin: 0px;
+}
+.dashInputContainer {
+  height: 230px;
+  border-radius: 40px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userInfos {
+  font-size: 15px;
+  line-height: 0px;
+  color: #000000;
+  font-weight: 500;
+}
+.selectInput {
+  width: 150px;
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.progressBar {
+  background-color: #0c854c;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+.userInfosContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.SubButton {
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+}

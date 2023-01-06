@@ -1,0 +1,71 @@
+.confiContainer {
+  height: 230px;
+  border-radius: 40px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+}
+.configHeading {
+  display: block;
+  margin: auto;
+}
+.addButton {
+  width: 90px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  font-size: 15px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.tableContainer {
+  width: 100%;
+  height: 250px;
+  border-radius: 44px;
+  background-color: #ffffff;
+  box-shadow: rgb(99 99 99 / 20%) 6px 10px 10px 5px;
+  padding-top: 60px;
+}
+Table {
+  border-collapse: collapse;
+  width: 100%;
+}
+Table,
+th,
+td {
+  border: 1px solid;
+  padding: 10px;
+}
+th {
+  background-color: #09192f;
+  color: white;
+}
+.rightButton {
+  width: 94px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  margin: 20px;
+}
+.buttonContainer2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.bgDark {
+  background-color: black;
+  height: 100vh;
+}
+.bgLight {
+  background-color: #ffffff;
+  height: 100vh;
+}
