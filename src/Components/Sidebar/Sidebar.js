@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { FaCog } from "react-icons/fa";
@@ -11,10 +11,15 @@ import "./Sidebar.css";
 import Context from "../context/Context";
 
 const Sidebar = () => {
+  const [showDropConfig, setShowDropConfig] = useState(false);
+  const dropDown = () => {
+    setShowDropConfig(!showDropConfig);
+    console.log(showDropConfig);
+  };
   return (
     <Context.Consumer>
       {(value) => {
-        const { darkTheme, toggleTheme } = value;
+        const { toggleTheme } = value;
 
         return (
           <div className="sidebar">
@@ -44,11 +49,24 @@ const Sidebar = () => {
               </div>
 
               <div>
-                <Link to="/configuration" className="linkContainer">
+                <Link
+                  to="/configuration"
+                  className="linkContainer"
+                  onClick={dropDown}
+                >
                   <FaCog className="icons" />{" "}
                   <p className="Headings">Configuration</p>
                 </Link>
               </div>
+              {showDropConfig ? (
+                <div>
+                  <Link to="/sheduledtime" className="linkContainer">
+                    <p className="Headings">Scheduled Downtime</p>
+                  </Link>
+                </div>
+              ) : (
+                <div></div>
+              )}
 
               <div>
                 <Link to="/analytics" className="linkContainer">

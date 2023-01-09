@@ -19,6 +19,7 @@
   font-size: 15px;
   margin-right: 50px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .buttonContainer {
   display: flex;
@@ -54,6 +55,7 @@ th {
   color: white;
   border-width: 0px;
   margin: 20px;
+  cursor: pointer;
 }
 .buttonContainer2 {
   display: flex;

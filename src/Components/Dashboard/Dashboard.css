@@ -45,3 +45,11 @@
   color: white;
   border-width: 0px;
 }
+.bgDark {
+  background-color: black;
+  height: 100vh;
+}
+.bgLight {
+  background-color: #ffffff;
+  height: 100vh;
+}

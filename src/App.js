@@ -9,6 +9,7 @@ import Roal from "./Components/RoalManage/Roal";
 import Settings from "./Components/Settings/Settings";
 import Context from "./Components/context/Context";
 import { useState } from "react";
+import SheduledTime from "./Components/SheduledTime/SheduledTime";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -29,6 +30,7 @@ function App() {
           <Routes>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="configuration" element={<Configuration />} />
+            <Route path="sheduledtime" element={<SheduledTime />} />
             <Route path="analytics" element={<Analytics />} />
             <Route path="usermanage" element={<UserManage />} />
             <Route path="roalmanage" element={<Roal />} />

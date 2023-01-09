@@ -1,0 +1,41 @@
+.sheduledContainer {
+  height: 200px;
+  border-radius: 40px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 0px;
+}
+.sheduleCon {
+  display: flex;
+  width: 100%;
+  height: 85px;
+
+  border-width: 1px solid black;
+  box-shadow: rgb(99 99 99 / 20%) 5px 0px 1px 5px;
+  align-items: center;
+}
+.sheduledHeading {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formInputs {
+  width: 230px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: 10px;
+}
+.buttonEl {
+  width: 94px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  margin: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.userManageCon {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.UserHeading {
+  margin-top: 0px;
+  text-align: center;
+}
+.inputFields {
+  padding: 10px;
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+.inputsContainer {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+}
+.inputsSubContainer {
+  margin-bottom: 41px;
+}
+.inputsSubContainer > label {
+  font-weight: 500;
+}
+.checkboxContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.checkboxContainer > label {
+  font-weight: 500;
+}
+.saveButton {
+  width: 68px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  width: 94px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #f80606;
+  color: white;
+  border-width: 0px;
+  margin: 20px;
+  cursor: pointer;
+}
