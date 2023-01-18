@@ -6,7 +6,6 @@ import Configuration from "./Components/Configuration/Configuration";
 import Analytics from "./Components/Analytics/Analytics";
 import UserManage from "./Components/UserManage/UserManage";
 import Roal from "./Components/RoalManage/Roal";
-//import Settings from "./Components/Settings/Settings";
 import Context from "./Components/context/Context";
 import { useState } from "react";
 import SheduledTime from "./Components/SheduledTime/SheduledTime";

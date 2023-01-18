@@ -1,0 +1,86 @@
+.fireContainer {
+  height: 130px;
+  border-radius: 0px 40px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+}
+.fireHeading {
+  display: block;
+  margin: auto;
+}
+.selectOption {
+  width: 200px;
+  height: 40px;
+  /* background-color: #92949c; */
+  border-width: 1px;
+  border-radius: 5px;
+}
+.selectButton {
+  height: 35px;
+  width: 130px;
+  border-radius: 5px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.fireOptionCont {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.countrySpecificContainer {
+  height: 350px;
+  width: 90%;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 20px;
+}
+.countrySpecify {
+  color: #fa2327;
+  font-weight: bold;
+  text-align: center;
+}
+.countryInputsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.countryInputs {
+  height: 40px;
+  width: 320px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+.labelElements {
+  font-size: 18px;
+  font-weight: 500;
+}
+.buttons {
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.resetButtons {
+  height: 35px;
+  border-radius: 5px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.resetButtonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}

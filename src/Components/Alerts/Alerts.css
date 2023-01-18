@@ -1,0 +1,12 @@
+.alertContainer {
+  height: 230px;
+  border-radius: 40px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+}
+.alertsHeading {
+  display: block;
+  margin: auto;
+}
