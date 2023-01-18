@@ -6,10 +6,13 @@ import Configuration from "./Components/Configuration/Configuration";
 import Analytics from "./Components/Analytics/Analytics";
 import UserManage from "./Components/UserManage/UserManage";
 import Roal from "./Components/RoalManage/Roal";
-import Settings from "./Components/Settings/Settings";
+//import Settings from "./Components/Settings/Settings";
 import Context from "./Components/context/Context";
 import { useState } from "react";
 import SheduledTime from "./Components/SheduledTime/SheduledTime";
+import Firewall from "./Components/Firewall/Firewall";
+import Alerts from "./Components/Alerts/Alerts";
+import FirewallServer from "./Components/FirewallServer/FirewallServer";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -34,7 +37,10 @@ function App() {
             <Route path="analytics" element={<Analytics />} />
             <Route path="usermanage" element={<UserManage />} />
             <Route path="roalmanage" element={<Roal />} />
-            <Route path="settings" element={<Settings />} />
+            {/*<Route path="settings" element={<Settings />} />*/}
+            <Route path="alerts" element={<Alerts />} />
+            <Route path="firewall" element={<Firewall />} />
+            <Route path="firewallforserver" element={<FirewallServer />} />
           </Routes>
         </BrowserRouter>
       </Context.Provider>

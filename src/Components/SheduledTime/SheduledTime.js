@@ -5,7 +5,7 @@ import "./SheduledTime.css";
 
 function SheduledTime() {
   return (
-    <div style={{ marginLeft: "30%" }}>
+    <div style={{ marginLeft: "20%" }}>
       <div>
         <div className="sheduledContainer">
           <div className="sheduleCon">

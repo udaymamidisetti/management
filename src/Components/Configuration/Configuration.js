@@ -10,7 +10,7 @@ function Configuration() {
         const { darkTheme } = value;
         const bgColor = darkTheme ? "bgDark" : "bgLight";
         return (
-          <div style={{ marginLeft: "30%" }}>
+          <div style={{ marginLeft: "20%" }}>
             <div className={`${bgColor}`}>
               <div>
                 <div className="confiContainer">

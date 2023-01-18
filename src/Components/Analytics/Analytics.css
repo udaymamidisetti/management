@@ -1,0 +1,127 @@
+.analyticsContainer {
+  height: 150px;
+  background-color: #ffffff;
+  display: flex;
+  border-bottom: 2px solid black;
+}
+.analyticsHeading {
+  display: block;
+  margin: auto;
+}
+.serverContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.serverStatusContainer {
+  display: flex;
+  align-items: center;
+}
+.selectOption {
+  width: 300px;
+  height: 40px;
+  /* background-color: #92949c; */
+  border-width: 1px;
+  border-radius: 10px;
+}
+.selectOption > option {
+  font-size: 28px;
+}
+.statusPara {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  padding-right: 20px;
+}
+.buttonS {
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.reportButton {
+  height: 35px;
+  border-radius: 8px;
+  background-color: #003169;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+  width: 200px;
+  font-weight: 600;
+}
+.summaryCon {
+  display: flex;
+}
+.summaryHeading {
+  display: block;
+  margin: auto;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 600;
+}
+.allPost {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.statusContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.GoodStatus {
+  width: 250px;
+  height: 136px;
+  border-radius: 6px;
+  background-color: #4de087;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badStatus {
+  width: 250px;
+  height: 136px;
+  border-radius: 6px;
+  background-color: #fd7072;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warningStatus {
+  background-color: #fab298;
+  width: 250px;
+  height: 136px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.allStatus {
+  background-color: #c4c4c4;
+  width: 250px;
+  height: 136px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statusNumber {
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+}
+.statusText {
+  font-weight: bold;
+  text-align: center;
+}
+.timeHeading {
+  color: #fa2327;
+  text-align: center;
+  font-size: 25px;
+}

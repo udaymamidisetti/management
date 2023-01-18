@@ -2,7 +2,7 @@ import React from "react";
 import "./UserManage.css";
 function UserManage() {
   return (
-    <div style={{ marginLeft: "30%" }}>
+    <div style={{ marginLeft: "20%" }}>
       <div>
         <div className="userManageCon">
           <h1 className="UserHeading">User Management</h1>

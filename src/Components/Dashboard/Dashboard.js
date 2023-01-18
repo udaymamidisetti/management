@@ -53,7 +53,7 @@ function Dashboard() {
         const { darkTheme } = value;
         const bgColor = darkTheme ? "bgDark" : "bgLight";
         return (
-          <div className={`${bgColor}`} style={{ marginLeft: "30%" }}>
+          <div className={`${bgColor}`} style={{ marginLeft: "20%" }}>
             <div className="dashboardContainer">
               <div className="dashInputContainer">
                 <div>
