@@ -1,51 +1,51 @@
 import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import { PieChart, Pie, Legend, Cell, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import Context from "../context/Context";
 
 import "./Dashboard.css";
 
 function Dashboard() {
-  const data = [
-    {
-      count: 809680,
-      language: "Telugu",
-    },
+  /*const data = [
     {
       count: 4555697,
       language: "Hindi",
     },
+  ];*/
+  const dummyData = [
     {
-      count: 12345657,
-      language: "English",
-    },
-  ];
-  /* const dummyData = [
-    {
+      count: 4555697,
       desc: "CPU Usage",
     },
     {
+      count: 4555697,
       desc: "Memory USage",
     },
     {
+      count: 4555697,
       desc: "Network",
     },
     {
+      count: 4555697,
       desc: "Error Attack",
     },
     {
+      count: 4555697,
       desc: "Memory USage",
     },
     {
+      count: 4555697,
       desc: "TCPIP Connection",
     },
     {
+      count: 4555697,
       desc: "Bandwidth Usage I/O",
     },
     {
+      count: 4555697,
       desc: "User Login",
     },
-  ]; */
+  ];
   const now = 50;
   return (
     <Context.Consumer>
@@ -97,30 +97,34 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-            <ResponsiveContainer width="100%" height={300}>
-              <PieChart>
-                <Pie
-                  cx="70%"
-                  cy="40%"
-                  data={data}
-                  startAngle={0}
-                  endAngle={360}
-                  innerRadius="40%"
-                  outerRadius="70%"
-                  dataKey="count"
-                >
-                  <Cell name="Telugu" fill="#fecba6" />
-                  <Cell name="Hindi" fill="#b3d23f" />
-                  <Cell name="English" fill="#a44c9e" />
-                </Pie>
-                <Legend
-                  iconType="circle"
-                  layout="vertical"
-                  verticalAlign="middle"
-                  align="right"
-                />
-              </PieChart>
-            </ResponsiveContainer>
+            <div className="pichartContainer">
+              {dummyData.map((each, index) => {
+                return (
+                  <div className="chartsContainer" key={index}>
+                    <ResponsiveContainer width="100%" height={150}>
+                      <PieChart>
+                        <Pie
+                          cx="50%"
+                          cy="50%"
+                          data={dummyData}
+                          startAngle={0}
+                          endAngle={360}
+                          innerRadius="50%"
+                          outerRadius="70%"
+                          dataKey="count"
+                        >
+                          <Cell fill="#f15c27" />
+                          <Cell fill="#1f579e" />
+                          <Cell fill="#a44c9e" />
+                        </Pie>
+                      </PieChart>
+                    </ResponsiveContainer>
+                    <p className="chartStatuses">{each.desc}</p>
+                  </div>
+                );
+              })}
+            </div>
+            <button className="seeMoreButton">See More</button>
           </div>
         );
       }}

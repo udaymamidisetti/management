@@ -30,7 +30,7 @@ function App() {
         <BrowserRouter>
           <Sidebar />
           <Routes>
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="configuration" element={<Configuration />} />
             <Route path="sheduledtime" element={<SheduledTime />} />
             <Route path="analytics" element={<Analytics />} />

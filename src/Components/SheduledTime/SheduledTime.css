@@ -38,3 +38,25 @@
   margin: 20px;
   cursor: pointer;
 }
+.sheduledArrow {
+  height: 40px;
+  background-color: #003169;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+}
+.downContainer {
+  font-weight: 500;
+  width: 218px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 20px;
+}

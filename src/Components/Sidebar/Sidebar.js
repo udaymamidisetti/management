@@ -6,8 +6,9 @@ import { FaBarcode } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaUserTag } from "react-icons/fa";
 import { FaCogs } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 import "./Sidebar.css";
 import Context from "../context/Context";
 
@@ -35,6 +36,7 @@ const Sidebar = () => {
     <Context.Consumer>
       {(value) => {
         const { toggleTheme } = value;
+        console.log(value.darkTheme);
 
         return (
           <div className="sidebar">
@@ -62,11 +64,7 @@ const Sidebar = () => {
             </form>
             <nav>
               <div>
-                <Link
-                  to="/dashboard"
-                  className="linkContainer"
-                  onClick={activeColor}
-                >
+                <Link to="/" className="linkContainer" onClick={activeColor}>
                   <FaHome className="icons" />
                   <p className="Headings">Dashboard</p>
                 </Link>
@@ -139,8 +137,19 @@ const Sidebar = () => {
                 </div>
               ) : null}
             </nav>
-            <button className="bg bg-success" onClick={toggleTheme}>
-              Toggle
+            <button className="toggleModeButton" onClick={toggleTheme}>
+              <div
+                className={value.darkTheme ? "darkContainer" : "lightContainer"}
+              >
+                <MdLightMode />
+                <p>Light</p>
+              </div>
+              <div
+                className={value.darkTheme ? "lightContainer" : "darkContainer"}
+              >
+                <MdDarkMode />
+                <p>Dark</p>
+              </div>
             </button>
           </div>
         );

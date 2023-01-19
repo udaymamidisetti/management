@@ -31,6 +31,7 @@
   height: 32px;
   display: flex;
   align-items: center;
+  width: 60%;
 }
 .userInfosContainer {
   display: flex;
@@ -44,6 +45,40 @@
   background-color: #003169;
   color: white;
   border-width: 0px;
+}
+.pichartContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.chartsContainer {
+  margin: 20px;
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 7px 16px 0px;
+}
+.chartStatuses {
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  font-weight: 500;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 0px;
+  height: 32px;
+}
+.seeMoreButton {
+  display: block;
+  margin: auto;
+  color: #003169;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
 .bgDark {
   background-color: black;
